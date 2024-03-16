@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    
+    <title>Document</title>
+</head>
+<body>
+    <div class="container">
+        <div class="container_2">
+            <h1>Banco Digital</h1>
+            <br>
+            <h3>Saldo: <strong id="text">0</strong></h3>
+            <br>
+            <label for="valor">Valor:
+            <input type="number" id="valor"></label>
+            <br>
+                <div class="botao">
+                    <button onclick="conta_deposito.deposito(parseFloat(document.getElementById('valor').value))" id="button_1">Depositar</button>
+                    <button onclick="conta_deposito.sacar(parseFloat(document.getElementById('valor').value))" id="button_2">Sacar</button>
+                </div>
+                <br>
+                <p id="avisos"></p>
+            </div>
+
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
